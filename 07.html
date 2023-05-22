@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function btnEvent(){
+            var btch=document.getElementById("btch");
+            var btor=document.getElementById("btor");
+
+            btch.onclick=chbg;
+            btor.onclick=chor;
+        }
+        function chbg(){
+            document.body.style.background ="yellow";
+        }
+        function chor(){
+            document.body.style.background ="white";
+        }
+    </script>
+</head>
+<body onload="btnEvent()">
+    <button id="btch">변경</button>
+    <button id="btor">복구</button>
+</body>
+</html>
